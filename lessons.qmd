@@ -1,0 +1,54 @@
+---
+title: "Find Your Path"
+toc: false
+---
+
+::::::::: path-gallery
+::: path-tile
+[![](images/abs_beginner.jpg){.path-image}](beginner.qmd)
+
+### [Absolute Beginner](beginner.qmd)
+
+Start from scratch and begin making music.
+:::
+
+::: path-tile
+[![](images/rock.jpg){.path-image}](rock.qmd)
+
+### [Rock / Alternative](rock.qmd)
+
+Riffs, power chords, rhythm & lead.
+:::
+
+::: path-tile
+[![](images/blues.jpg){.path-image}](blues.qmd)
+
+### [Blues](blues.qmd)
+
+Pentatonics, phrasing & improvisation.
+:::
+
+::: path-tile
+[![](images/folk.jpg){.path-image}](songwriter.qmd)
+
+### [Singer-Songwriter / Folk](songwriter.qmd)
+
+Chords, strumming, fingerpicking & accompaniment.
+:::
+
+::: path-tile
+[![](images/jazz.jpg){.path-image}](jazz.qmd)
+
+### [Jazz Foundations](jazz.qmd)
+
+Jazz chords, harmony & improvisation fundamentals.
+:::
+
+::: path-tile
+[![](images/lead_guitar.jpg){.path-image}](lead.qmd)
+
+### [Lead Guitar](lead.qmd)
+
+Technique, phrasing, solos & fretboard freedom.
+:::
+:::::::::

@@ -1,0 +1,41 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+:::::: {.landing-page}
+
+::: {.landing-photo}
+![](images/ben-portrait.jpeg){.hero-photo}
+:::
+
+:::: {.landing-content}
+
+::: {.right-logo}
+![](images/logo.png){.right-logo-image}
+:::
+
+:::: {.right-body}
+
+::: {.eyebrow}
+GUITAR LESSONS · SANTA BARBARA + GOLETA
+:::
+
+# Learn guitar through the music you love.
+
+## Personalized lessons built around your goals, your taste, and the kind of player you want to become.
+
+In-home guitar lessons for beginners and developing players of all ages.
+
+::: {.hero-actions}
+[Find Your Path](lessons.qmd){.btn .btn-primary}
+
+[Book a First Lesson](https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start){.btn .btn-outline}
+:::
+
+::::
+
+::::
+
+::::::

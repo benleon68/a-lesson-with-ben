@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "A Lesson with Ben"
+
+  navbar:
+    title: false
+    search: false
+
+    left:
+      - href: index.qmd
+        text: HOME
+
+      - href: lessons.qmd
+        text: LESSONS
+
+      - href: approach.qmd
+        text: MY APPROACH
+
+      - href: about.qmd
+        text: ABOUT
+
+      - href: https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start
+        text: BOOK
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    anchor-sections: false

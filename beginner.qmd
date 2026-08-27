@@ -1,0 +1,19 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: path-page
+# Absolute Beginner
+
+Lessons for beginners may involve tuning, basic rhythm, chords, riffs, picking, fretboard fundamentals, and beginning to learn simple tunes by ear.
+
+If you've never played before, that's completely fine. Early lessons would mostly be about getting comfortable with the instrument and figuring out what kinds of music you actually want to play.
+
+The plan won't be to bombard you with a giant list of guitar concepts before you're allowed to have fun with the instrument. I'll establish the fundamentals while figuring out what kind of player you aim to be, and we'll gradually start using songs and recordings as part of the learning process.
+
+**This path is a starting point, not a fixed curriculum.**
+
+[Book a First Lesson](YOUR-LINK){.btn .btn-primary}
+:::
