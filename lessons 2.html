@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lead – A Lesson with Ben</title>
+<title>Find Your Path – A Lesson with Ben</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lessons.html"> 
+    <a class="nav-link active" href="./lessons.html" aria-current="page"> 
 <span class="menu-text">LESSONS</span></a>
   </li>  
   <li class="nav-item">
@@ -116,24 +116,76 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Find Your Path</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="lead-guitar" class="level1 path-page">
-<h1>Lead Guitar</h1>
-<p>Lead guitar lessons may involve bends, vibrato, phrasing, timing, articulation, picking, fretboard navigation, improvisation, and learning solos or smaller phrases directly from recordings.</p>
-<p>Knowing which notes to play is only half of the story. We can spend time looking at how different guitarists actually produce those notes and what makes their playing recognizable.</p>
-<p>Over time, learning ideas from several different players can help you add licks to your back pocket to experiment with and eventually combine in your own way.</p>
-<p><strong>This path is a starting point, not a fixed curriculum.</strong></p>
-<p><a href="https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start" class="btn btn-primary">Book a First Lesson</a></p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="path-gallery">
+<div class="path-tile">
+<p><a href="./beginner.html"><img src="images/abs_beginner.jpg" class="path-image img-fluid"></a></p>
+<section id="absolute-beginner" class="level3">
+<h3 data-anchor-id="absolute-beginner"><a href="./beginner.html">Absolute Beginner</a></h3>
+<p>Start from scratch and begin making music.</p>
 </section>
+</div>
+<div class="path-tile">
+<p><a href="./rock.html"><img src="images/rock.jpg" class="path-image img-fluid"></a></p>
+<section id="rock-alternative" class="level3">
+<h3 data-anchor-id="rock-alternative"><a href="./rock.html">Rock / Alternative</a></h3>
+<p>Riffs, power chords, rhythm &amp; lead.</p>
+</section>
+</div>
+<div class="path-tile">
+<p><a href="./blues.html"><img src="images/blues.jpg" class="path-image img-fluid"></a></p>
+<section id="blues" class="level3">
+<h3 data-anchor-id="blues"><a href="./blues.html">Blues</a></h3>
+<p>Pentatonics, phrasing &amp; improvisation.</p>
+</section>
+</div>
+<div class="path-tile">
+<p><a href="./songwriter.html"><img src="images/folk.jpg" class="path-image img-fluid"></a></p>
+<section id="singer-songwriter-folk" class="level3">
+<h3 data-anchor-id="singer-songwriter-folk"><a href="./songwriter.html">Singer-Songwriter / Folk</a></h3>
+<p>Chords, strumming, fingerpicking &amp; accompaniment.</p>
+</section>
+</div>
+<div class="path-tile">
+<p><a href="./jazz.html"><img src="images/jazz.jpg" class="path-image img-fluid"></a></p>
+<section id="jazz-foundations" class="level3">
+<h3 data-anchor-id="jazz-foundations"><a href="./jazz.html">Jazz Foundations</a></h3>
+<p>Jazz chords, harmony &amp; improvisation fundamentals.</p>
+</section>
+</div>
+<div class="path-tile">
+<p><a href="./lead.html"><img src="images/lead_guitar.jpg" class="path-image img-fluid"></a></p>
+<section id="lead-guitar" class="level3">
+<h3 data-anchor-id="lead-guitar"><a href="./lead.html">Lead Guitar</a></h3>
+<p>Technique, phrasing, solos &amp; fretboard freedom.</p>
+</section>
+</div>
+</div>
 
 
 
@@ -204,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/benleon68\.github\.io\/a-lesson-with-ben\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
