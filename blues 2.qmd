@@ -1,0 +1,21 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.path-page}
+
+# Blues
+
+Blues lessons may involve rhythm, pentatonic ideas, bends, vibrato, phrasing, improvisation, chord progressions, and learning licks or solos by ear.
+
+The blues is especially useful for learning how much can be done with a relatively small amount of musical material. Two players can use almost the same pentatonic box and still sound completely different.
+
+Because of that, a lot of attention can go toward timing, touch, bends, vibrato, dynamics, and the space between notes rather than simply memorizing scale shapes.
+
+**This path is a starting point, not a fixed curriculum.**
+
+[Book a First Lesson](https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start){.btn .btn-primary}
+
+:::

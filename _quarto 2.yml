@@ -3,7 +3,6 @@ project:
 
 website:
   title: "A Lesson with Ben"
-  favicon: images/favicon.png
 
   navbar:
     title: false

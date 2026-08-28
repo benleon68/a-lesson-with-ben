@@ -1,0 +1,21 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.path-page}
+
+# Lead Guitar
+
+Lead guitar lessons may involve bends, vibrato, phrasing, timing, articulation, picking, fretboard navigation, improvisation, and learning solos or smaller phrases directly from recordings.
+
+Knowing which notes to play is only half of the story. We can spend time looking at how different guitarists actually produce those notes and what makes their playing recognizable.
+
+Over time, learning ideas from several different players can help you add licks to your back pocket to experiment with and eventually combine in your own way.
+
+**This path is a starting point, not a fixed curriculum.**
+
+[Book a First Lesson](https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start){.btn .btn-primary}
+
+:::
