@@ -4,21 +4,17 @@ page-layout: full
 toc: false
 ---
 
-:::: {.about-page}
-
-:::: {.about-intro}
-
-::: {.about-left}
-
+:::::::: about-page
+::::::: about-intro
+::::: about-left
 ![](images/ben-lake.jpeg){.about-main-photo}
 
-::: {.why-teach}
-
+:::: why-teach
 ## Why I Teach
 
 I know what it's like to learn guitar without having one perfectly organized path laid out in front of you. It can be frustrating and tedious, but I also think some amount of struggling, experimenting, and figuring things out for yourself is an important part of becoming a musician.
 
-::: {.struggle-photo}
+::: struggle-photo
 ![](images/young-ben-guitar.jpeg){.young-guitar-photo}
 
 *And occasionally it might make you look like this.*
@@ -35,14 +31,10 @@ Rather than simply being told *"play this scale 100 times,"* I want students to 
 > **How can I make it sound like me?**
 
 That's the kind of musician I want to help someone become.
+::::
+:::::
 
-:::
-
-:::
-
-
-::: {.about-intro-copy}
-
+::: about-intro-copy
 # About Me
 
 I grew up in Tulare, a small city in California's Central Valley. For the past three years, Isla Vista has been home while I've been working toward a Physics B.S. at UCSB. Music wasn't a particularly strong part of my family or the scene I grew up around, so I feel fortunate that I eventually stumbled onto a guitar on my own.
@@ -61,8 +53,7 @@ That's a big reason I wanted to start teaching.
 
 I want to help other players develop the same tools that made guitar exciting for me: listening closely, experimenting, developing an ear, understanding the instrument, and eventually building a musical voice of their own.
 
+You can also hear some of my playing on [YouTube](https://www.youtube.com/@BenLeon67).
 :::
-
-::::
-
-::::
+:::::::
+::::::::
