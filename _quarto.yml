@@ -5,6 +5,10 @@ website:
   title: "A Lesson with Ben"
   favicon: images/favicon.png
 
+  page-footer:
+    center: |
+      Questions before booking? [Call](tel:+15598379757) or [text](sms:+15598379757) Ben.
+
   navbar:
     title: false
     search: false
