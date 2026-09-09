@@ -32,6 +32,7 @@ In-home guitar lessons for beginners and developing players of all ages.
 [Find Your Path](lessons.qmd){.btn .btn-primary}
 
 [Book a First Lesson](https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start){.btn .btn-outline}
+
 :::
 
 ::::
@@ -39,3 +40,23 @@ In-home guitar lessons for beginners and developing players of all ages.
 ::::
 
 ::::::
+::::: {.newsletter-section}
+
+:::: {.newsletter-inner}
+
+::: {.newsletter-copy}
+
+::: {.newsletter-kicker}
+JOIN THE NEWSLETTER · WEEKLY GUITAR TIPS
+:::
+
+## A little guitar lesson, right in your inbox.
+
+Short weekly tips, exercises, and ideas to help you understand the guitar and find your own way around it.
+
+:::
+
+::: {.newsletter-form}
+
+```{=html}
+<script async data-uid="d27265327b" src="https://a-lesson-with-ben.kit.com/d27265327b/index.js"></script>
