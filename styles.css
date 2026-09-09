@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Shrikhand&display=swap');
 
+
+/* ==================================================
+   BRAND
+   ================================================== */
+
 :root {
   --cream: #eee3c5;
   --forest: #304a3a;
@@ -9,9 +14,10 @@
   --soft-cream: #f8f2e3;
 }
 
-/* =========================
-   RESET / RESPONSIVE SAFETY
-   ========================= */
+
+/* ==================================================
+   GLOBAL / RESET
+   ================================================== */
 
 *,
 *::before,
@@ -44,6 +50,7 @@ video {
 .page-layout-full,
 main {
   max-width: 100%;
+  min-width: 0;
 }
 
 h1,
@@ -62,9 +69,9 @@ a:hover {
 }
 
 
-/* =========================
+/* ==================================================
    NAVBAR
-   ========================= */
+   ================================================== */
 
 .navbar {
   background-color: var(--cream) !important;
@@ -74,9 +81,11 @@ a:hover {
 
 .navbar-nav .nav-link {
   color: var(--brown) !important;
+
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
+
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -86,9 +95,9 @@ a:hover {
 }
 
 
-/* =========================
+/* ==================================================
    HOMEPAGE HERO
-   ========================= */
+   ================================================== */
 
 .landing-page {
   display: grid;
@@ -96,23 +105,25 @@ a:hover {
 
   width: min(1400px, calc(100% - 2rem));
 
-  height: calc(100vh - 90px);
-  min-height: 620px;
+  height: calc(100vh - 78px);
+  min-height: 600px;
   max-height: 820px;
 
-  margin: 1rem auto;
+  margin: 0.6rem auto;
 
   overflow: hidden;
+
+  max-width: 100%;
+  min-width: 0;
 }
 
 
-/* =========================
-   LEFT PHOTO
-   ========================= */
+/* LEFT PHOTO */
 
 .landing-photo {
   min-width: 0;
   min-height: 0;
+
   height: 100%;
   overflow: hidden;
 }
@@ -130,18 +141,11 @@ a:hover {
   height: 100%;
 
   object-fit: cover;
-
-  /*
-  Adjust this number if you ever want
-  slightly more/less space around your face.
-  */
   object-position: 57% center;
 }
 
 
-/* =========================
-   RIGHT PANEL
-   ========================= */
+/* RIGHT HERO PANEL */
 
 .landing-content {
   min-width: 0;
@@ -152,22 +156,21 @@ a:hover {
   display: flex;
   flex-direction: column;
 
-  padding: 1.3rem 3.5rem 1.8rem;
+  padding: 1rem 3rem 1.3rem;
 }
 
 
-/* =========================
-   LOGO
-   ========================= */
+/* HERO LOGO */
 
 .right-logo {
   display: flex;
   align-items: center;
   justify-content: center;
 
+  width: 100%;
   flex: 0 0 auto;
 
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.25rem;
 }
 
 .right-logo p {
@@ -177,14 +180,18 @@ a:hover {
 .right-logo-image {
   display: block;
 
-  width: clamp(280px, 72%, 390px);
+  width: clamp(260px, 64%, 350px);
   height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  /* optical center for the asymmetrical ear */
+  transform: translateX(10px);
 }
 
 
-/* =========================
-   HERO TEXT
-   ========================= */
+/* HERO TEXT */
 
 .right-body {
   min-width: 0;
@@ -195,32 +202,35 @@ a:hover {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   margin: 0 auto;
+  padding-top: 0.25rem;
 }
 
 .eyebrow {
   color: var(--sage);
 
-  font-size: 0.78rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.76rem;
   font-weight: 700;
 
   letter-spacing: 0.16em;
   text-transform: uppercase;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
 }
 
 .right-body h1 {
   color: var(--forest);
 
   font-family: "Shrikhand", serif;
+  font-weight: 400;
 
-  font-size: clamp(2.5rem, 3.5vw, 3.8rem);
-  line-height: 0.98;
+  font-size: clamp(2.35rem, 3.2vw, 3.35rem);
+  line-height: 1;
 
-  margin: 0 0 1rem;
+  margin: 0 0 0.7rem;
 }
 
 .right-body h2 {
@@ -228,32 +238,32 @@ a:hover {
 
   font-family: "DM Sans", sans-serif;
 
-  font-size: clamp(1rem, 1.3vw, 1.22rem);
+  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
   font-weight: 600;
-  line-height: 1.4;
-
-  margin: 0 0 0.9rem;
-}
-
-.right-body p {
-  font-size: 0.98rem;
-  line-height: 1.55;
+  line-height: 1.35;
 
   margin: 0 0 0.7rem;
 }
 
+.right-body p {
+  font-family: "DM Sans", sans-serif;
 
-/* =========================
-   HERO BUTTONS
-   ========================= */
+  font-size: 0.94rem;
+  line-height: 1.45;
+
+  margin: 0 0 0.55rem;
+}
+
+
+/* HERO BUTTONS */
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
 
-  gap: 0.75rem;
+  gap: 0.55rem;
 
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .hero-actions p {
@@ -266,11 +276,12 @@ a:hover {
   width: fit-content;
   max-width: 100%;
 
-  padding: 0.8rem 1.35rem;
+  padding: 0.7rem 1.15rem;
 
   border-radius: 999px;
 
-  font-size: 0.92rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.88rem;
   font-weight: 700;
 
   text-align: center;
@@ -311,9 +322,9 @@ a:hover {
 }
 
 
-/* =========================
+/* ==================================================
    FIND YOUR PATH
-   ========================= */
+   ================================================== */
 
 .path-title {
   color: var(--forest);
@@ -335,6 +346,9 @@ a:hover {
 
   margin-top: 2rem;
   margin-bottom: 5rem;
+
+  max-width: 100%;
+  min-width: 0;
 }
 
 .path-tile {
@@ -394,9 +408,43 @@ a:hover {
 }
 
 
-/* =========================
+/* ==================================================
+   SHARED ABOUT / APPROACH
+   ================================================== */
+
+.about-page,
+.approach-page {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 2.5rem auto 5rem;
+}
+
+.page-kicker {
+  color: var(--sage);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  margin-bottom: 0.8rem;
+}
+
+.section-title {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(2rem, 3vw, 2.7rem);
+
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ==================================================
    ABOUT PAGE
-   ========================= */
+   ================================================== */
 
 .about-hero {
   display: grid;
@@ -407,6 +455,9 @@ a:hover {
   align-items: center;
 
   margin: 3rem auto;
+
+  max-width: 100%;
+  min-width: 0;
 }
 
 .about-image {
@@ -455,9 +506,860 @@ a:hover {
 }
 
 
-/* =========================
-   SMALLER DESKTOP / ZOOM
-   ========================= */
+/* CURRENT ABOUT LAYOUT */
+
+.about-intro {
+  display: grid;
+
+  grid-template-columns: 1fr 1.08fr;
+
+  gap: 3.5rem;
+
+  align-items: start;
+}
+
+.about-left {
+  min-width: 0;
+}
+
+.about-intro-photo {
+  align-self: start;
+
+  margin-top: 0;
+
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.about-main-photo {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+  object-position: 57% 48%;
+
+  border-radius: 22px;
+}
+
+.about-intro-copy {
+  min-width: 0;
+}
+
+.about-intro-copy h1 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1;
+
+  margin: 0 0 1rem;
+}
+
+.about-intro-copy h2 {
+  font-family: "DM Sans", sans-serif;
+  color: var(--brown);
+
+  font-size: 1.35rem;
+  line-height: 1.4;
+
+  margin: 0 0 1.4rem;
+}
+
+.about-intro-copy p {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* WHY I TEACH */
+
+.why-teach {
+  margin-top: 2rem;
+}
+
+.why-teach h2 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: 2rem;
+
+  margin: 0 0 1rem;
+}
+
+.why-teach p,
+.why-teach blockquote {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.why-teach blockquote {
+  border-left: 3px solid var(--sage);
+
+  padding-left: 1rem;
+
+  margin: 0.8rem 0;
+}
+
+.why-teach blockquote,
+.why-teach blockquote p,
+.why-teach blockquote strong {
+  color: var(--forest) !important;
+}
+
+
+/* CHILDHOOD GUITAR PHOTO */
+
+.struggle-photo {
+  margin: 1.4rem 0 1.7rem;
+  max-width: 320px;
+}
+
+.struggle-photo p {
+  margin: 0.45rem 0 0;
+
+  font-size: 0.85rem;
+  font-style: italic;
+
+  opacity: 0.7;
+}
+
+.young-guitar-photo {
+  width: 100%;
+  display: block;
+
+  border-radius: 16px;
+}
+
+
+/* OTHER ABOUT COMPONENTS */
+
+.about-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 1.25rem;
+}
+
+.about-value {
+  background: var(--soft-cream);
+
+  border-radius: 18px;
+
+  padding: 1.6rem;
+}
+
+.about-value h3 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: 1.5rem;
+
+  margin: 0 0 0.7rem;
+}
+
+.about-value p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.about-second {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 4rem;
+
+  align-items: center;
+
+  margin-top: 5rem;
+}
+
+.about-second-copy h2 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: 2.5rem;
+
+  margin-top: 0;
+}
+
+.about-second-copy li {
+  margin-bottom: 0.35rem;
+}
+
+.about-secondary-photo {
+  display: block;
+
+  width: 100%;
+
+  border-radius: 22px;
+}
+
+
+/* ==================================================
+   APPROACH — LEGACY COMPONENTS
+   ================================================== */
+
+.approach-header {
+  max-width: 800px;
+
+  margin: 3rem auto 4rem;
+
+  text-align: center;
+}
+
+.approach-header h1 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+
+  margin: 0 0 1.25rem;
+}
+
+.approach-header p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.approach-steps {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+.approach-step {
+  background: var(--soft-cream);
+
+  border-radius: 18px;
+
+  padding: 1.5rem;
+}
+
+.step-number {
+  color: var(--gold);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  margin-bottom: 1.2rem;
+}
+
+.approach-step h3 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: 1.4rem;
+  line-height: 1.15;
+
+  margin: 0 0 0.7rem;
+}
+
+.approach-step p {
+  line-height: 1.55;
+  margin: 0;
+}
+
+
+/* RECORD / EAR METHOD */
+
+.record-method {
+  background-color: var(--soft-cream);
+
+  border-radius: 24px;
+
+  padding: 3rem;
+
+  margin-top: 5rem;
+}
+
+.record-method h2 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+
+  margin: 0 0 1rem;
+}
+
+.record-method p {
+  line-height: 1.7;
+}
+
+.ear-flow {
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  gap: 0.65rem;
+
+  margin: 2rem 0;
+}
+
+.ear-flow div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 90px;
+
+  padding: 0.8rem;
+
+  border: 2px solid var(--forest);
+  border-radius: 999px;
+
+  color: var(--forest);
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+
+/* CONNECTION FLOW */
+
+.connection-flow {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 0.8rem;
+
+  background: var(--soft-cream);
+
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  margin: 2rem 0;
+}
+
+.connection-flow > div:not(.flow-arrow) {
+  flex: 1;
+  text-align: center;
+}
+
+.flow-arrow {
+  color: var(--sage);
+  font-size: 1.8rem;
+}
+
+
+/* PAGE ACTIONS */
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  margin-top: 1.5rem;
+}
+
+.page-actions p {
+  display: contents;
+}
+
+.approach-ending {
+  margin-top: 5rem;
+
+  padding: 3rem;
+
+  border-radius: 24px;
+
+  background: var(--soft-cream);
+}
+
+.approach-ending h2 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  margin-top: 0;
+}
+
+
+/* ==================================================
+   SIMPLIFIED APPROACH VARIANTS
+   ================================================== */
+
+.approach-page {
+  width: min(1000px, calc(100% - 2rem));
+
+  margin: 3rem auto 5rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+.approach-page p,
+.approach-page li,
+.approach-page blockquote {
+  font-family: "DM Sans", sans-serif !important;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+
+  color: var(--brown);
+}
+
+.approach-feature {
+  background-color: var(--soft-cream);
+
+  border-radius: 22px;
+
+  padding: 2.5rem;
+
+  margin: 4rem 0;
+}
+
+.approach-feature h2 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(2rem, 3vw, 2.7rem);
+
+  margin-top: 0;
+}
+
+.approach-page blockquote {
+  border-left: 4px solid var(--sage);
+
+  padding-left: 1.25rem;
+
+  margin: 1.5rem 0;
+
+  font-weight: 600;
+}
+
+.approach-simple {
+  width: min(850px, calc(100% - 2rem));
+
+  margin: 4rem auto 6rem;
+}
+
+.approach-simple h1 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1;
+
+  margin: 0 0 2rem;
+}
+
+.approach-simple p {
+  font-family: "DM Sans", sans-serif !important;
+  color: var(--brown);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  margin: 0 0 1.7rem;
+}
+
+.approach-simple .page-actions {
+  margin-top: 2.5rem;
+}
+
+
+/* ==================================================
+   APPROACH — ABOUT-STYLE VERSION
+   ================================================== */
+
+.approach-page-new {
+  width: min(1180px, calc(100% - 2rem));
+
+  margin: 3rem auto 6rem;
+}
+
+.approach-intro {
+  display: grid;
+
+  grid-template-columns: 0.72fr 1.28fr;
+
+  gap: 4.5rem;
+
+  align-items: start;
+}
+
+.approach-left {
+  min-width: 0;
+
+  position: sticky;
+  top: 6rem;
+
+  align-self: start;
+
+  padding-top: 1rem;
+}
+
+.approach-logo {
+  display: block;
+
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+
+  margin: 0 auto 2.5rem;
+}
+
+.approach-side-note {
+  max-width: 390px;
+
+  margin: 0 auto;
+}
+
+.approach-side-note h2 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: 2rem;
+  line-height: 1.1;
+
+  margin: 0 0 1rem;
+}
+
+.approach-side-note p {
+  font-family: "DM Sans", sans-serif !important;
+  color: var(--brown);
+
+  font-size: 1rem;
+  line-height: 1.65;
+
+  margin-bottom: 1rem;
+}
+
+.approach-copy {
+  min-width: 0;
+}
+
+.approach-copy h1 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1;
+
+  margin: 0 0 1.4rem;
+}
+
+.approach-copy p {
+  font-family: "DM Sans", sans-serif !important;
+  color: var(--brown);
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  margin: 0 0 1.4rem;
+}
+
+
+/* ==================================================
+   CURRENT MY APPROACH LAYOUT
+   ================================================== */
+
+.approach-clean {
+  width: min(1180px, calc(100% - 2rem));
+
+  margin: 3rem auto 6rem;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 4.5rem;
+
+  align-items: start;
+}
+
+.approach-visual {
+  min-width: 0;
+
+  position: static !important;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 !important;
+}
+
+.approach-main-logo {
+  display: block;
+
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+
+  margin: 0 auto !important;
+
+  transform: translateY(-4rem);
+}
+
+.approach-text {
+  min-width: 0;
+}
+
+.approach-text h1 {
+  font-family: "Shrikhand", serif;
+  color: var(--forest);
+
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  line-height: 0.95;
+
+  margin: 0 0 2rem;
+}
+
+.approach-text p {
+  font-family: "DM Sans", sans-serif !important;
+  color: var(--brown);
+
+  font-size: 1.06rem;
+  line-height: 1.8;
+
+  margin: 0 0 1.6rem;
+}
+
+
+/* ==================================================
+   HOMEPAGE NEWSLETTER
+   ================================================== */
+
+.newsletter-section {
+  width: min(1400px, calc(100% - 2rem));
+
+  margin: 1rem auto;
+
+  padding: 4.5rem 4rem;
+
+  background-color: var(--forest);
+
+  overflow: hidden;
+}
+
+.newsletter-inner {
+  width: min(1100px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  gap: 4rem;
+
+  align-items: center;
+}
+
+
+/* NEWSLETTER COPY */
+
+.newsletter-copy {
+  min-width: 0;
+}
+
+.newsletter-kicker {
+  color: var(--gold);
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  margin: 0 0 1rem;
+}
+
+.newsletter-kicker p {
+  margin: 0;
+}
+
+.newsletter-copy h2 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+
+  color: var(--cream) !important;
+
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  line-height: 1.05;
+
+  margin: 0 0 1rem;
+
+  /* Removes Quarto / Bootstrap's default h2 line */
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.newsletter-copy > p {
+  font-family: "DM Sans", sans-serif;
+
+  color: var(--soft-cream) !important;
+
+  font-size: 1.05rem;
+  line-height: 1.65;
+
+  max-width: 560px;
+
+  margin: 0;
+}
+
+
+/* NEWSLETTER FORM AREA */
+
+.newsletter-form {
+  min-width: 0;
+  width: 100%;
+}
+
+
+/* KIT FORM RESET */
+
+.newsletter-form .formkit-form {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.newsletter-form .formkit-fields {
+  display: flex !important;
+
+  width: 100% !important;
+
+  align-items: stretch !important;
+
+  gap: 0.65rem !important;
+}
+
+.newsletter-form .formkit-field {
+  flex: 1 1 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* EMAIL INPUT */
+
+.newsletter-form .formkit-input {
+  width: 100% !important;
+
+  min-height: 52px !important;
+
+  padding: 0.8rem 1.15rem !important;
+
+  background: var(--soft-cream) !important;
+
+  color: var(--brown) !important;
+
+  border: 2px solid var(--cream) !important;
+  border-radius: 999px !important;
+
+  outline: none !important;
+
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 0.95rem !important;
+}
+
+.newsletter-form .formkit-input::placeholder {
+  color: var(--brown) !important;
+  opacity: 0.7 !important;
+}
+
+.newsletter-form .formkit-input:focus {
+  border-color: var(--gold) !important;
+}
+
+
+/* SUBMIT BUTTON */
+
+.newsletter-form .formkit-submit {
+  flex: 0 0 auto !important;
+
+  min-height: 52px !important;
+
+  padding: 0.8rem 1.35rem !important;
+
+  background: var(--gold) !important;
+
+  color: var(--brown) !important;
+
+  border: 2px solid var(--gold) !important;
+  border-radius: 999px !important;
+
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+
+  white-space: nowrap !important;
+
+  cursor: pointer !important;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease !important;
+}
+
+.newsletter-form .formkit-submit:hover {
+  background: var(--cream) !important;
+
+  border-color: var(--cream) !important;
+
+  color: var(--brown) !important;
+}
+
+
+/* KIT SUCCESS / ERROR MESSAGES */
+
+.newsletter-form .formkit-alert {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+
+/* KIT BRANDING — keep visible but subtle */
+
+.newsletter-form .formkit-powered-by-convertkit,
+.newsletter-form .formkit-powered-by,
+.newsletter-form [class*="powered"] {
+  color: var(--soft-cream) !important;
+
+  opacity: 0.7;
+
+  font-family: "DM Sans", sans-serif !important;
+}
+
+
+/* ==================================================
+   RESPONSIVE — SMALLER DESKTOP
+   ================================================== */
 
 @media (max-width: 1150px) {
 
@@ -480,14 +1382,15 @@ a:hover {
 }
 
 
-/* =========================
-   TABLETS / HIGH ZOOM
-   ========================= */
+/* ==================================================
+   RESPONSIVE — TABLET / HIGH ZOOM
+   ================================================== */
 
 @media (max-width: 950px) {
 
   .landing-page {
     display: grid;
+
     grid-template-columns: 1fr;
 
     width: min(760px, 100%);
@@ -533,469 +1436,15 @@ a:hover {
 }
 
 
-/* =========================
-   PHONES
-   ========================= */
-
-@media (max-width: 600px) {
-
-  .landing-page {
-    width: 100%;
-    margin: 0;
-  }
-
-  .landing-photo {
-    aspect-ratio: 4 / 5;
-  }
-
-  .landing-content {
-    padding: 2rem 1.25rem 3rem;
-  }
-
-  .right-logo-image {
-    width: 240px;
-  }
-
-  .right-body h1 {
-    font-size: 2.65rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .path-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* =========================
-   FINAL OVERFLOW PROTECTION
-   ========================= */
-
-html,
-body,
-#quarto-content,
-.page-columns,
-.page-layout-full,
-main,
-.landing-page,
-.landing-photo,
-.landing-content,
-.right-body,
-.path-gallery,
-.about-hero {
-  max-width: 100%;
-  min-width: 0;
-}
-
-html,
-body {
-  overflow-x: hidden !important;
-}
-/* =========================
-   HERO COMPRESSION
-   ========================= */
-
-.landing-page {
-  height: calc(100vh - 78px);
-  min-height: 600px;
-  margin: 0.6rem auto;
-}
-
-.landing-content {
-  padding: 1rem 3rem 1.3rem;
-}
-
-.right-logo {
-  margin-bottom: 0.25rem;
-}
-
-.right-logo-image {
-  width: clamp(260px, 64%, 350px);
-}
-
-.right-body {
-  justify-content: flex-start;
-  padding-top: 0.25rem;
-}
-
-.eyebrow {
-  font-size: 0.76rem;
-  margin-bottom: 0.65rem;
-}
-
-.right-body h1 {
-  font-size: clamp(2.35rem, 3.2vw, 3.35rem);
-  line-height: 1;
-  margin-bottom: 0.7rem;
-}
-
-.right-body h2 {
-  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
-  line-height: 1.35;
-  margin-bottom: 0.7rem;
-}
-
-.right-body p {
-  font-size: 0.94rem;
-  line-height: 1.45;
-  margin-bottom: 0.55rem;
-}
-
-.hero-actions {
-  gap: 0.55rem;
-  margin-top: 0.25rem;
-}
-
-.btn {
-  padding: 0.7rem 1.15rem;
-  font-size: 0.88rem;
-}
-/* =========================
-   FINAL HOMEPAGE POLISH
-   ========================= */
-
-/* Optically center the logo */
-.right-logo {
-  width: 100%;
-  justify-content: center;
-}
-
-.right-logo-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateX(10px);
-}
-
-
-/* Keep typography roles consistent */
-
-/* Main retro headline only */
-.right-body h1 {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-}
-
-/* Everything informational stays clean */
-.eyebrow,
-.right-body h2,
-.right-body p,
-.btn,
-.navbar-nav .nav-link {
-  font-family: "DM Sans", sans-serif;
-}
 /* ==================================================
-   ABOUT + APPROACH PAGES
+   RESPONSIVE — ABOUT / APPROACH
    ================================================== */
-
-.about-page,
-.approach-page {
-  width: min(1180px, calc(100% - 2rem));
-  margin: 2.5rem auto 5rem;
-}
-
-.page-kicker {
-  color: var(--sage);
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
-}
-
-.section-title {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  margin-top: 4.5rem;
-  margin-bottom: 1.5rem;
-}
-
-
-/* =========================
-   ABOUT
-   ========================= */
-
-.about-intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.about-intro-photo {
-  overflow: hidden;
-  border-radius: 22px;
-}
-
-.about-main-photo {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 22px;
-}
-
-.about-intro-copy h1 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 1;
-  margin: 0 0 1rem;
-}
-
-.about-intro-copy h2 {
-  font-family: "DM Sans", sans-serif;
-  color: var(--brown);
-  font-size: 1.35rem;
-  line-height: 1.4;
-  margin: 0 0 1.4rem;
-}
-
-.about-intro-copy p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.about-three {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-.about-value {
-  background: var(--soft-cream);
-  border-radius: 18px;
-  padding: 1.6rem;
-}
-
-.about-value h3 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: 1.5rem;
-  margin: 0 0 0.7rem;
-}
-
-.about-value p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.about-second {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 4rem;
-  align-items: center;
-  margin-top: 5rem;
-}
-
-.about-second-copy h2 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: 2.5rem;
-  margin-top: 0;
-}
-
-.about-second-copy li {
-  margin-bottom: 0.35rem;
-}
-
-.about-secondary-photo {
-  display: block;
-  width: 100%;
-  border-radius: 22px;
-}
-
-
-/* =========================
-   APPROACH
-   ========================= */
-
-.approach-header {
-  max-width: 850px;
-  margin: 4rem auto 5rem;
-  text-align: center;
-}
-
-.approach-header h1 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(3.5rem, 7vw, 6.5rem);
-  line-height: 0.95;
-  margin: 0 0 1.5rem;
-}
-
-.approach-header p {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-
-.approach-steps {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.approach-step {
-  background: var(--soft-cream);
-  border-radius: 18px;
-  padding: 1.5rem;
-}
-
-.step-number {
-  color: var(--gold);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  margin-bottom: 1.2rem;
-}
-
-.approach-step h3 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: 1.4rem;
-  line-height: 1.15;
-  margin: 0 0 0.7rem;
-}
-
-.approach-step p {
-  line-height: 1.55;
-  margin: 0;
-}
-
-
-/* =========================
-   RECORD / EAR METHOD
-   ========================= */
-
-.record-method {
-  background-color: var(--soft-cream);
-  border-radius: 24px;
-  padding: 3rem;
-  margin-top: 5rem;
-}
-
-.record-method h2 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(2.3rem, 4vw, 3.5rem);
-  margin: 0 0 1rem;
-}
-
-.record-method p {
-  line-height: 1.7;
-}
-
-.ear-flow {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0.65rem;
-  margin: 2rem 0;
-}
-
-.ear-flow div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 90px;
-
-  padding: 0.8rem;
-
-  border: 2px solid var(--forest);
-  border-radius: 999px;
-
-  color: var(--forest);
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 0.88rem;
-}
-
-
-/* =========================
-   CONNECTION FLOW
-   ========================= */
-
-.connection-flow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.8rem;
-
-  background: var(--soft-cream);
-
-  border-radius: 20px;
-
-  padding: 2rem;
-
-  margin: 2rem 0;
-}
-
-.connection-flow > div:not(.flow-arrow) {
-  flex: 1;
-  text-align: center;
-}
-
-.flow-arrow {
-  color: var(--sage);
-  font-size: 1.8rem;
-}
-
-
-/* =========================
-   PAGE ACTIONS
-   ========================= */
-
-.page-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
-}
-
-.page-actions p {
-  display: contents;
-}
-
-.approach-ending {
-  margin-top: 5rem;
-  padding: 3rem;
-  border-radius: 24px;
-  background: var(--soft-cream);
-}
-
-.approach-ending h2 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  margin-top: 0;
-}
-
-
-/* =========================
-   TABLET
-   ========================= */
 
 @media (max-width: 900px) {
 
-  .about-intro,
   .about-second {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .about-main-photo {
-    aspect-ratio: 4 / 3;
   }
 
   .about-three {
@@ -1020,21 +1469,168 @@ body {
 }
 
 
-/* =========================
-   PHONE
-   ========================= */
+@media (max-width: 850px) {
+
+  .about-intro,
+  .approach-intro {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .approach-left {
+    position: static;
+  }
+
+  .approach-logo {
+    max-width: 320px;
+  }
+
+  .struggle-photo {
+    max-width: 360px;
+  }
+
+  .approach-clean {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .approach-main-logo {
+    max-width: 300px;
+
+    transform: none;
+  }
+
+  .approach-text h1 {
+    font-size: 3.3rem;
+  }
+
+
+  /* NEWSLETTER */
+
+  .newsletter-section {
+    width: calc(100% - 1rem);
+
+    padding: 3.5rem 2rem;
+  }
+
+  .newsletter-inner {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .newsletter-copy {
+    text-align: center;
+  }
+
+  .newsletter-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .newsletter-form {
+    width: min(560px, 100%);
+
+    margin: 0 auto;
+  }
+}
+
+
+/* ==================================================
+   RESPONSIVE — PHONE
+   ================================================== */
 
 @media (max-width: 600px) {
+
+  /* HOMEPAGE */
+
+  .landing-page {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+
+    overflow: visible !important;
+  }
+
+  .landing-photo {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: 380px !important;
+    min-height: 380px !important;
+
+    aspect-ratio: auto !important;
+
+    overflow: hidden !important;
+  }
+
+  .hero-photo {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    object-position: 57% 38% !important;
+  }
+
+  .landing-content {
+    width: 100% !important;
+    height: auto !important;
+
+    padding: 1.4rem 1.25rem 2.5rem !important;
+  }
+
+  .right-logo-image {
+    width: 240px;
+  }
+
+  .right-body h1 {
+    font-size: 2.65rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  /* PATHS */
+
+  .path-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ABOUT */
 
   .about-page,
   .approach-page {
     width: calc(100% - 2rem);
+
     margin-top: 2rem;
   }
 
   .about-intro-copy h1 {
     font-size: 3rem;
   }
+
+
+  /* APPROACH */
 
   .approach-header {
     margin-top: 2rem;
@@ -1049,7 +1645,8 @@ body {
   }
 
   .record-method,
-  .approach-ending {
+  .approach-ending,
+  .approach-feature {
     padding: 1.5rem;
   }
 
@@ -1059,530 +1656,245 @@ body {
 
   .page-actions {
     flex-direction: column;
+
     align-items: flex-start;
   }
-}
-/* =========================
-   SIMPLIFIED APPROACH PAGE
-   ========================= */
 
-.approach-page {
-  width: min(1000px, calc(100% - 2rem));
-  margin: 3rem auto 5rem;
-
-  font-family: "DM Sans", sans-serif;
-}
-
-.approach-page p,
-.approach-page li,
-.approach-page blockquote {
-  font-family: "DM Sans", sans-serif !important;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--brown);
-}
-
-.approach-header {
-  max-width: 800px;
-  margin: 3rem auto 4rem;
-  text-align: center;
-}
-
-.approach-header h1 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(3rem, 6vw, 5rem);
-  line-height: 1;
-  margin: 0 0 1.25rem;
-}
-
-.approach-header p {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-}
-
-.approach-feature {
-  background-color: var(--soft-cream);
-  border-radius: 22px;
-  padding: 2.5rem;
-  margin: 4rem 0;
-}
-
-.approach-feature h2 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  margin-top: 0;
-}
-
-.approach-page blockquote {
-  border-left: 4px solid var(--sage);
-  padding-left: 1.25rem;
-  margin: 1.5rem 0;
-  font-weight: 600;
-}
-
-@media (max-width: 600px) {
-  .approach-page {
-    width: calc(100% - 2rem);
-    margin-top: 2rem;
-  }
-
-  .approach-feature {
-    padding: 1.5rem;
-  }
-}
-/* =========================
-   SIMPLE APPROACH PAGE
-   ========================= */
-
-.approach-simple {
-  width: min(850px, calc(100% - 2rem));
-  margin: 4rem auto 6rem;
-}
-
-.approach-simple h1 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  line-height: 1;
-  margin: 0 0 2rem;
-}
-
-.approach-simple p {
-  font-family: "DM Sans", sans-serif !important;
-  color: var(--brown);
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin: 0 0 1.7rem;
-}
-
-.approach-simple .page-actions {
-  margin-top: 2.5rem;
-}
-/* =========================
-   ABOUT PAGE ALIGNMENT FIX
-   ========================= */
-
-.about-intro {
-  align-items: start;
-}
-
-.about-intro-photo {
-  align-self: start;
-  margin-top: 0;
-}
-
-.about-main-photo {
-  width: 100%;
-  height: auto;
-  aspect-ratio: auto;
-  object-fit: contain;
-  display: block;
-}
-/* =========================
-   ABOUT PAGE — TWO COLUMN
-   ========================= */
-
-.about-intro {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-.about-left {
-  min-width: 0;
-}
-
-.about-main-photo {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 22px;
-}
-
-.why-teach {
-  margin-top: 2rem;
-}
-
-.why-teach h2 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: 2rem;
-  margin: 0 0 1rem;
-}
-
-.why-teach p,
-.why-teach blockquote {
-  font-family: "DM Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 1.65;
-}
-
-.why-teach blockquote {
-  border-left: 3px solid var(--sage);
-  padding-left: 1rem;
-  margin: 0.8rem 0;
-}
-
-.about-intro-copy {
-  min-width: 0;
-}
-
-.about-intro-copy h1 {
-  margin-top: 0;
-}
-
-@media (max-width: 850px) {
-  .about-intro {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-/* =========================
-   MY APPROACH — ABOUT STYLE
-   ========================= */
-
-.approach-page-new {
-  width: min(1180px, calc(100% - 2rem));
-  margin: 3rem auto 6rem;
-}
-
-.approach-intro {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-/* LEFT SIDE */
-
-.approach-left {
-  min-width: 0;
-}
-
-.approach-logo {
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.approach-side-note {
-  margin-top: 2rem;
-}
-
-.approach-side-note h2 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: 2rem;
-  line-height: 1.1;
-  margin: 0 0 1rem;
-}
-
-.approach-side-note p {
-  font-family: "DM Sans", sans-serif !important;
-  color: var(--brown);
-  font-size: 1rem;
-  line-height: 1.65;
-  margin-bottom: 1rem;
-}
-
-/* RIGHT SIDE */
-
-.approach-copy {
-  min-width: 0;
-}
-
-.approach-copy h1 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-  font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 1;
-  margin: 0 0 1.4rem;
-}
-
-.approach-copy p {
-  font-family: "DM Sans", sans-serif !important;
-  color: var(--brown);
-  font-size: 1.05rem;
-  line-height: 1.75;
-  margin: 0 0 1.4rem;
-}
-
-/* TABLET / PHONE */
-
-@media (max-width: 850px) {
-  .approach-intro {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .approach-logo {
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 600px) {
   .approach-page-new {
     width: calc(100% - 2rem);
+
     margin-top: 2rem;
   }
 
   .approach-copy h1 {
     font-size: 3rem;
   }
-}
-/* =========================
-   ABOUT — FINAL POLISH
-   ========================= */
-
-.about-intro {
-  grid-template-columns: 1fr 1.08fr;
-  gap: 3.5rem;
-  align-items: start;
-}
-
-/* Crop inward so Ben is actually visible */
-.about-main-photo {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: 57% 48%;
-  border-radius: 22px;
-  display: block;
-}
-
-.struggle-photo {
-  margin: 1.4rem 0 1.7rem;
-  max-width: 320px;
-}
-
-.struggle-photo p {
-  margin: 0.45rem 0 0;
-  font-size: 0.88rem;
-  font-style: italic;
-  opacity: 0.78;
-}
-
-.young-guitar-photo {
-  width: 100%;
-  display: block;
-  border-radius: 16px;
-}
-
-/* =========================
-   APPROACH — BALANCE LEFT SIDE
-   ========================= */
-
-.approach-intro {
-  grid-template-columns: 0.72fr 1.28fr;
-  gap: 4.5rem;
-  align-items: start;
-}
-
-/*
-   Keeps the logo + short thought together while
-   the longer writing occupies the right.
-*/
-.approach-left {
-  position: sticky;
-  top: 6rem;
-  align-self: start;
-  padding-top: 1rem;
-}
-
-.approach-logo {
-  width: 100%;
-  max-width: 390px;
-  margin: 0 auto 2.5rem;
-}
-
-.approach-side-note {
-  max-width: 390px;
-  margin: 0 auto;
-}
-
-@media (max-width: 850px) {
-  .about-intro,
-  .approach-intro {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .approach-left {
-    position: static;
-  }
-
-  .struggle-photo {
-    max-width: 360px;
-  }
-}
-.why-teach blockquote,
-.why-teach blockquote p,
-.why-teach blockquote strong {
-  color: var(--forest) !important;
-}
-
-.struggle-photo p {
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
-/* =========================
-   MY APPROACH — FINAL LAYOUT
-   ========================= */
-
-.approach-clean {
-  width: min(1180px, calc(100% - 2rem));
-  margin: 3rem auto 6rem;
-
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 4.5rem;
-
-  align-items: start;
-}
-
-/* LEFT — LOGO */
-
-.approach-visual {
-  min-width: 0;
-  position: static;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  padding-top: 1rem;
-}
-.approach-visual {
-  padding-top: 0;
-  align-items: flex-start;
-}
-
-.approach-main-logo {
-  margin-top: 1rem;
-}
-
-/* RIGHT — WRITING */
-
-.approach-text {
-  min-width: 0;
-}
-
-.approach-text h1 {
-  font-family: "Shrikhand", serif;
-  color: var(--forest);
-
-  font-size: clamp(3.5rem, 5vw, 5rem);
-  line-height: 0.95;
-
-  margin: 0 0 2rem;
-}
-
-.approach-text p {
-  font-family: "DM Sans", sans-serif !important;
-  color: var(--brown);
-
-  font-size: 1.06rem;
-  line-height: 1.8;
-
-  margin: 0 0 1.6rem;
-}
-
-@media (max-width: 850px) {
-  .approach-clean {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .approach-main-logo {
-    max-width: 300px;
-  }
 
   .approach-text h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
+  }
+
+
+  /* NEWSLETTER */
+
+  .newsletter-section {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 3.5rem 1.25rem;
+  }
+
+  .newsletter-copy h2 {
+    font-size: 2.6rem;
+  }
+
+  .newsletter-form .formkit-fields {
+    flex-direction: column !important;
+  }
+
+  .newsletter-form .formkit-submit {
+    width: 100% !important;
   }
 }
-/* ACTUAL APPROACH LOGO ALIGNMENT */
 
-.approach-visual {
-  position: static !important;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 !important;
+
+/* ==================================================
+   FINAL OVERFLOW PROTECTION
+   ================================================== */
+
+html,
+body,
+#quarto-content,
+.page-columns,
+.page-layout-full,
+main,
+.landing-page,
+.landing-photo,
+.landing-content,
+.right-body,
+.path-gallery,
+.about-hero,
+.about-page,
+.approach-page,
+.newsletter-section,
+.newsletter-inner {
+  max-width: 100%;
+  min-width: 0;
 }
 
-.approach-main-logo {
-  display: block;
-  width: 100%;
-  max-width: 390px;
-  height: auto;
-  margin: 0 auto !important;
-
-  /* visibly move logo upward */
-  transform: translateY(-4rem);
+html,
+body {
+  overflow-x: hidden !important;
 }
 /* =========================
-   FINAL MOBILE HOMEPAGE FIX
+   NEWSLETTER FINAL POLISH
    ========================= */
 
-@media (max-width: 600px) {
+.newsletter-section {
+  padding: 3.5rem 4rem;
+}
 
-  .landing-page {
-    display: flex !important;
-    flex-direction: column !important;
+.newsletter-inner {
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+}
 
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
+.newsletter-copy h2 {
+  font-size: clamp(2.5rem, 3.5vw, 3.35rem);
+  line-height: 1.08;
+  max-width: 560px;
+}
 
-    margin: 0 !important;
-    overflow: visible !important;
+/* force description to cream */
+.newsletter-section .newsletter-copy p {
+  color: var(--soft-cream) !important;
+  opacity: 0.92;
+  max-width: 540px;
+}
+
+/* tighten kicker */
+.newsletter-kicker {
+  margin-bottom: 0.8rem;
+}
+
+/* move form into a tighter visual block */
+.newsletter-form {
+  align-self: center;
+}
+
+/* make Kit branding readable but quiet */
+.newsletter-form a,
+.newsletter-form [class*="powered"] {
+  color: var(--cream) !important;
+  opacity: 0.6 !important;
+}
+
+/* slightly smaller button so it doesn't dominate */
+.newsletter-form .formkit-submit {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+@media (max-width: 850px) {
+  .newsletter-section {
+    padding: 3rem 1.5rem;
   }
 
-  .landing-photo {
-    display: block !important;
-
-    width: 100% !important;
-    height: 480px !important;
-    min-height: 480px !important;
-
-    aspect-ratio: auto !important;
-    overflow: hidden !important;
+  .newsletter-copy h2 {
+    max-width: none;
   }
+}
+/* NEWSLETTER — LAST TWEAKS */
 
-  @media (max-width: 600px) {
+.newsletter-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
-  .landing-photo {
-    width: 100% !important;
-    height: 380px !important;
-    min-height: 380px !important;
-    overflow: hidden !important;
-  }
+.newsletter-inner {
+  align-items: center;
+}
 
-  .hero-photo {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
+.newsletter-copy h2 {
+  font-size: clamp(2.4rem, 3.2vw, 3.15rem);
+  margin-bottom: 0.8rem;
+}
 
-    /* keeps your face/guitar framed */
-    object-position: 57% 38% !important;
-  }
+.newsletter-copy > p {
+  max-width: 520px;
+}
 
-  .landing-content {
-    padding: 1.4rem 1.25rem 2.5rem !important;
-  }
+.newsletter-form .formkit-fields {
+  gap: 0.55rem !important;
+}
+
+.newsletter-form .formkit-input {
+  min-height: 50px !important;
+}
+
+.newsletter-form .formkit-submit {
+  min-height: 50px !important;
+}
+
+/* Make Kit credit visible but unobtrusive */
+.newsletter-form .formkit-powered-by-convertkit,
+.newsletter-form .formkit-powered-by,
+.newsletter-form [class*="powered"] {
+  color: var(--cream) !important;
+  opacity: 0.5 !important;
+}
+/* Make newsletter input + button balanced */
+
+.newsletter-form .formkit-field,
+.newsletter-form .formkit-submit {
+  flex: 1 1 0 !important;
+  width: 100% !important;
+}
+
+.newsletter-form .formkit-input,
+.newsletter-form .formkit-submit {
+  height: 52px !important;
+  min-height: 52px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.newsletter-form .formkit-powered-by-convertkit,
+.newsletter-form .formkit-powered-by,
+.newsletter-form [class*="powered"] {
+  color: var(--cream) !important;
+  opacity: 0.35 !important;
+}
+.newsletter-form {
+  transform: translateX(-20px);
+}
+/* Center Kit button text perfectly */
+
+.newsletter-form .formkit-submit {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
+
+.newsletter-form .formkit-submit span {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+/* PERFECT NEWSLETTER FIELD ALIGNMENT */
+
+.newsletter-form .formkit-input,
+.newsletter-form .formkit-submit {
+  height: 52px !important;
+  min-height: 52px !important;
+  box-sizing: border-box !important;
+}
+
+/* Email field text */
+.newsletter-form .formkit-input {
+  padding: 0 1.15rem !important;
+  line-height: 52px !important;
+}
+
+/* Button text */
+.newsletter-form .formkit-submit {
+  padding: 0 1.25rem !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+.newsletter-form .formkit-submit span {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
 }
