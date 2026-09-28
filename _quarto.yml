@@ -26,7 +26,12 @@ website:
       - href: about.qmd
         text: ABOUT
 
-  
+      - text: BOOK
+        menu:
+          - text: 30-Min Lesson
+            href: https://calendar.app.google/GpYUvJxek3R5y36c9
+          - text: 60-Min Lesson
+            href: https://calendar.app.google/q96F91WGMwzb1pcF7
 
 format:
   html:

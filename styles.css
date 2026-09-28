@@ -94,6 +94,31 @@ a:hover {
   color: var(--forest) !important;
 }
 
+.navbar .dropdown-menu {
+  background-color: var(--soft-cream);
+  border: 1.5px solid var(--brown);
+  border-radius: 12px;
+  padding: 0.4rem;
+  box-shadow: 0 8px 20px rgba(66, 54, 46, 0.12);
+}
+
+.navbar .dropdown-item {
+  color: var(--brown) !important;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: var(--forest);
+  color: var(--soft-cream) !important;
+}
+
 
 /* ==================================================
    HOMEPAGE HERO
