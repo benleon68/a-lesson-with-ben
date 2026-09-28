@@ -26,8 +26,7 @@ website:
       - href: about.qmd
         text: ABOUT
 
-      - href: https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start
-        text: BOOK
+  
 
 format:
   html:

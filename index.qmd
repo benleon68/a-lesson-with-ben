@@ -4,21 +4,18 @@ page-layout: full
 toc: false
 ---
 
-:::::: {.landing-page}
-
-::: {.landing-photo}
+::::::::: landing-page
+::: landing-photo
 ![](images/ben-portrait.jpeg){.hero-photo}
 :::
 
-:::: {.landing-content}
-
-::: {.right-logo}
+::::::: landing-content
+::: right-logo
 ![](images/logo.png){.right-logo-image}
 :::
 
-:::: {.right-body}
-
-::: {.eyebrow}
+::::: right-body
+::: eyebrow
 GUITAR LESSONS · SANTA BARBARA + GOLETA
 :::
 
@@ -28,35 +25,34 @@ GUITAR LESSONS · SANTA BARBARA + GOLETA
 
 In-home guitar lessons for beginners and developing players of all ages.
 
-::: {.hero-actions}
+::: hero-actions
 [Find Your Path](lessons.qmd){.btn .btn-primary}
 
-[Book a First Lesson](https://app.squareup.com/appointments/book/s4l8v9afg209qf/LBR8W4HEHF81N/start){.btn .btn-outline}
+[Book 30-Min Lesson](https://calendar.app.google/GpYUvJxek3R5y36c9){.btn .btn-outline}
 
+[Book 60-Min Lesson](https://calendar.app.google/q96F91WGMwzb1pcF7){.btn .btn-outline}
 :::
+:::::
+:::::::
+:::::::::
 
-::::
-
-::::
-
-::::::
-::::: {.newsletter-section}
-
-:::: {.newsletter-inner}
-
-::: {.newsletter-copy}
-
-::: {.newsletter-kicker}
+::::::: newsletter-section
+:::::: newsletter-inner
+:::: newsletter-copy
+::: newsletter-kicker
 JOIN THE NEWSLETTER · WEEKLY GUITAR TIPS
 :::
 
 ## A little guitar lesson, right in your inbox.
 
 Short weekly tips, exercises, and ideas to help you understand the guitar and find your own way around it.
+::::
 
-:::
-
-::: {.newsletter-form}
+::: newsletter-form
 
 ```{=html}
 <script async data-uid="d27265327b" src="https://a-lesson-with-ben.kit.com/d27265327b/index.js"></script>
+```
+:::
+::::::
+:::::::
