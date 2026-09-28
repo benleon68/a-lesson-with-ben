@@ -1898,3 +1898,21 @@ body {
   padding: 0 !important;
   text-align: center !important;
 }
+/* ==================================================
+   HERO — ALLOW GROWTH FOR EXTRA BUTTONS
+   ================================================== */
+
+.landing-page {
+  height: auto;
+  min-height: min(calc(100vh - 78px), 820px);
+  max-height: none;
+}
+
+.landing-photo {
+  position: relative;
+}
+
+.landing-photo p {
+  position: absolute;
+  inset: 0;
+}
